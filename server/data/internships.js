@@ -1,4 +1,4 @@
-const internships = [
+const internshipsData = [
   {
     id: "google",
     company: "Google",
@@ -61,4 +61,4 @@ const internships = [
   }
 ];
 
-export default internships
+export default internshipsData

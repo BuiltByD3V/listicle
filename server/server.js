@@ -1,5 +1,6 @@
 import express from 'express'
-import internships from './data/internships.js'
+import internshipsData from './data/internships.js'
+import internshipsRouter from './routes/internships.js'
 
 const app = express()
 
@@ -28,6 +29,8 @@ app.get('/', (req, res) => {
         </html>
     `)
 })
+
+app.use('/internships', internshipsRouter)
 
 const PORT = process.env.PORT || 3001
 
