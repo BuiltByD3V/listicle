@@ -32,6 +32,30 @@ app.get('/', (req, res) => {
 
 app.use('/internships', internshipsRouter)
 
+app.use((req, res) => {
+    res.status(404).send(`
+        <!doctype html>
+        <html lang="en">
+            <head>
+                <meta charset="UTF-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                <title>Page Not Found</title>
+                <link
+                    rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+                >
+            </head>
+            <body>
+                <main class="container">
+                    <h1>Page Not Found</h1>
+                    <p>The page you requested does not exist.</p>
+                    <a href="/">Back to home</a>
+                </main>
+            </body>
+        </html>
+    `)
+})
+
 const PORT = process.env.PORT || 3001
 
 app.listen(PORT, () => {

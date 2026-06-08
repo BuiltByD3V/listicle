@@ -13,7 +13,7 @@ const renderInternships = async () => {
                     <p><strong>Role:</strong> ${internship.role}</p>
                     <p><strong>Location:</strong> ${internship.location}</p>
                     <p><strong>Pay:</strong> ${internship.pay}</p>
-                    <a href="/internship.html?id=${internship.id}" role="button">View details</a>
+                    <a href="/internships/${internship.id}" role="button">View details</a>
                 </article>
             `
         }).join('')
