@@ -24,6 +24,22 @@ router.get('/:internshipid', (req, res) => {
                         rel="stylesheet"
                         href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
                     >
+                    <style>
+                        main {
+                            padding-top: 2rem;
+                        }
+
+                        article {
+                            max-width: 760px;
+                            margin: 0 auto;
+                        }
+
+                        img {
+                            width: 64px;
+                            height: 64px;
+                            object-fit: contain;
+                        }
+                    </style>
                 </head>
                 <body>
                     <main class="container">
@@ -55,6 +71,11 @@ router.get('/:internshipid', (req, res) => {
                         rel="stylesheet"
                         href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
                     >
+                    <style>
+                        main {
+                            padding-top: 3rem;
+                        }
+                    </style>
                 </head>
                 <body>
                     <main class="container">

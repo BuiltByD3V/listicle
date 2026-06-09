@@ -9,10 +9,11 @@ const renderInternships = async () => {
             return `
                 <article>
                     <img src="${internship.image}" alt="${internship.company} logo">
-                    <h2>${internship.company}</h2>
+                    <h3>${internship.company}</h3>
                     <p><strong>Role:</strong> ${internship.role}</p>
                     <p><strong>Location:</strong> ${internship.location}</p>
                     <p><strong>Pay:</strong> ${internship.pay}</p>
+                    <p><strong>Status:</strong> ${internship.applicationStatus}</p>
                     <a href="/internships/${internship.id}" role="button">View details</a>
                 </article>
             `

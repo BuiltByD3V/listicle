@@ -7,9 +7,13 @@ const headerLeft = document.createElement('div')
 headerLeft.className = 'header-left'
 
 const headerTitle = document.createElement('h1')
-headerTitle.textContent = 'Listicle'
+headerTitle.textContent = 'Internship Launchpad'
 
 headerLeft.appendChild(headerTitle)
+const headerSubtitle = document.createElement('p')
+headerSubtitle.textContent = 'Software engineering internship directory'
+headerLeft.appendChild(headerSubtitle)
+
 const headerRight = document.createElement('div')
 headerRight.className = 'header-right'
 
